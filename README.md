@@ -13,9 +13,14 @@ This Python-based system provides a robust solution for user identity management
 - **State Persistence:** Full File I/O integration ensures all user data and lock statuses are preserved between system restarts.
 
 ## 📂 System Structure
-- `main.py`: The core engine containing the multi-layered authentication logic.
+- `GelosLoginApplication.py`: The main application (entry point). Provides the menu-driven interface and controls the authentication workflow.
+- `GelosLibraries.py`: UDF library containing the core modules/functions:
+  - `Registration`
+  - `userLogin`
+  - `viewAccounts`
 - `accounts.txt`: The primary database for active user credentials.
 - `lockUserList.txt`: The security registry for restricted/locked users.
+
 
 ## 💻 How It Works (Logic Flow)
 1. **Check Lock Status:** System verifies if the user is in the lockout registry.
