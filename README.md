@@ -23,4 +23,4 @@ This Python-based system provides a robust solution for user identity management
 3. **Session Management:** Provides a continuous menu-driven experience until the user chooses to exit.
 
 ---
-*This project was completed as part of the ICT30120 Certificate III in Information Technology.*
+*This project was completed as part of the **TAFE NSW - ICT30120-01V02 Certificate III in Information Technology (focusing on Programming and Web)**.*
