@@ -9,15 +9,23 @@ This project represents a major milestone in my **career transition into Softwar
 
 The system is a professional-grade solution for user identity management, designed for the **Gelos Enterprises business framework**. It goes beyond basic classroom exercises by implementing a security-first architecture for user authentication, account auditing, and unauthorized access prevention.
 
-## 🛠️ Key Technical Features
-* **Smart Authentication Logic:**
-    * **Pre-login Security Gatekeeping:** The system interrogates `lockUserList.txt` prior to authentication to intercept locked accounts.
-    * **Credential Validation:** High-precision matching against the `accounts.txt` data repository.
-* **Robust Registration Workflow:**
-    * **Data Integrity:** Real-time duplicate username detection to ensure database uniqueness.
-    * **Security Standards:** Enforced password complexity policies (e.g., **Minimum 8-character requirement**).
-* **Administrative Auditing:** A dedicated administrative module designed for system overseers to list and audit accounts.
-* **State Persistence:** Full **File I/O integration** ensures all records are preserved between restarts.
+## 🚀 Functional Modules & System Logic
+
+Instead of a single-purpose script, this system is divided into three enterprise-ready functional modules, ensuring a professional user experience without the need for a GUI.
+
+### 1. Advanced User Registration Module
+* **Uniqueness Validation:** Implements a lookup algorithm to ensure no duplicate usernames exist in the global registry.
+* **Security Enforcement:** Enforces strict password policies (8+ characters) to align with enterprise security standards.
+* **Auto-Persistence:** Instantly synchronizes new user data with the `accounts.txt` database.
+
+### 2. Multi-Tier Authentication & Security Gatekeeping
+* **Blacklist Pre-Screening:** Prior to credential entry, the system cross-references the `lockUserList.txt` to prevent unauthorized access from compromised accounts.
+* **Three-Factor Match:** Validates user existence, password accuracy, and account status simultaneously.
+* **Error Resilience:** Handles empty inputs and invalid characters gracefully to prevent runtime crashes.
+
+### 3. Administrative Audit & Data Retrieval
+* **Privileged Access:** A restricted module for administrators to perform system-wide audits.
+* **Formatted Data Display:** Extracts and presents raw data from text-based repositories into a structured, readable console format for reporting. ensures all records are preserved between restarts.
 
 ## 📂 System Architecture
 The project follows a **Modular Design** pattern to separate concerns:
