@@ -25,6 +25,12 @@ The project follows a **Modular Design** pattern to separate concerns:
 * **GelosLibraries.py**: The **Core Logic Engine** (Registration, Login, View).
 * **Data Layer**: Includes `accounts.txt` and `lockUserList.txt`.
 
+## 📐 Design & Methodology (SDLC)
+Following standard Software Development Life Cycle (SDLC) practices, I developed a logical blueprint before moving into the implementation phase. This ensured that complex edge cases, such as account lockouts and empty inputs, were handled gracefully.
+
+* **[View Original Pseudocode (Initial Design Phase)](https://github.com/Tina-YingWang-AU/tafe-it-portfolio/blob/main/01-Certificate-III-IT/02-Software-Design-and-Development/design_docs/pseudocode_login_system.md)**
+  * *Note: This document tracks the foundational logic that evolved into the current robust system.*
+
 ## 💻 Logic Flow
 1. **Status Verification:** Checks the Lockout Registry first.
 2. **Identity Authentication:** Matches credentials against the database.
